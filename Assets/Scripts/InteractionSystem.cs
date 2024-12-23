@@ -42,6 +42,7 @@ namespace Betty
             //判斷是否有互動介面
             if (hit.collider.TryGetComponent(out IInteraction interaction)) 
             {
+                print($"<color=#f33>是否碰到物件 : {hit.collider.name}</color>");
                 // 如果按下左鍵 就對互動物件執行撿取功能
                 if (Input.GetKeyDown(KeyCode.Mouse0))
                 {

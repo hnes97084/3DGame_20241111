@@ -32,7 +32,7 @@ namespace Betty
         public void Interaction()
         {
             // 如果還沒有撿取就跳出
-            if (isPickUp) return;
+            if (!isPickUp) return;
             // 如果按下 F 鍵後
             if (Input.GetKeyDown(keyFlashlight))
             {
